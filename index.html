@@ -94,9 +94,9 @@
                 </p>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <div class="input-group">
-                        <input type="text" class="form-control input-lg" placeholder="youremail@example.com">
+                        <input type="text" class="form-control input-lg" placeholder="youremail@example.com" data-email-input="true">
                         <span class="input-group-btn">
-                            <a href="#about" class="btn btn-primary btn-xl page-scroll">Get Free Trial</a>
+                            <a href="#" class="btn btn-primary btn-xl" data-submit-btn="true">Get Free Trial</a>
                         </span>
                     </div>
                 </div>
@@ -159,15 +159,51 @@
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <div class="input-group">
-                        <input type="text" class="form-control input-lg" placeholder="youremail@example.com">
+                        <input type="text" class="form-control input-lg" placeholder="youremail@example.com" data-email-input="true">
                         <span class="input-group-btn">
-                            <a href="#" class="btn btn-primary btn-xl page-scroll">Get Free Trial</a>
+                            <a href="#" class="btn btn-primary btn-xl" data-submit-btn="true">Get Free Trial</a>
                         </span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <div id="email-success-modal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Success!</h4>
+          </div>
+          <div class="modal-body">
+            <p>Cool! You've already in our waiting list, invite your friends to join together, we will give you a special gift ;)</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="email-failed-modal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Failed!</h4>
+          </div>
+          <div class="modal-body">
+            <p>Oops, your email seems not valid, please check again.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
