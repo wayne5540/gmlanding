@@ -1,3 +1,3 @@
-# Guitar Mentor
+# Just a test project to pratice css
 
 
