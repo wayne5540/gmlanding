@@ -7,7 +7,7 @@ submitBtns.on("click", function(e){
 
   $.ajax({
     method: "POST",
-    url: "http://localhost:3000/api/waiting_lists",
+    url: "https://evening-shelf-3541.herokuapp.com/api/waiting_lists",
     data: { "email": email }
   }).done(function(response){
     console.log(response);
