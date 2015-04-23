@@ -186,6 +186,17 @@ header {
     -o-background-size: cover;
 }
 
+header::before {
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
 header .header-content {
     position: relative;
     width: 100%;
